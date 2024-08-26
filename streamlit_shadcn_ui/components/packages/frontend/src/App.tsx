@@ -54,7 +54,7 @@ crouter.declare("link_button", StLinkButton);
 crouter.declare("badges", StBadges);
 crouter.declare("element_renderer", ElementRenderer);
 
-function App(props: ComponentProps<{comp: string; props: any; [key: string]: any}>) {
+function App(props: ComponentProps) {
     const { args, width, disabled, theme } = props;
     const container = useRef(null);
     const safeHeight = args.safeHeight ?? 10;
